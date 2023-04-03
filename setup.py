@@ -1,7 +1,9 @@
 from setuptools import find_packages, setup
 from typing import List
 
+
 TIRE_E_POINT = '-e .'
+
 def get_requirements(file_path:str)-> List[str]:
     '''
     la fontion permettant de retourner la liste des elements contenus dans requirements.txt
@@ -15,6 +17,7 @@ def get_requirements(file_path:str)-> List[str]:
             requirements.remove(TIRE_E_POINT)
 
     return requirements
+
 
 setup(
 name='ML_project',
